@@ -287,7 +287,8 @@ Send {Shift Up}{NumLock Up}
 return
 $*NumLock Up::Send {Shift Up}{NumLock Up}
 ~p::
-Soundbeep , ,500
+SoundPlay *-1
+; Soundbeep , ,500
 return
 $c::
 WinActivate ahk_class ahk_class Shell_TrayWnd ;Activates the Taskbar, to avoid giving KMP keys.
